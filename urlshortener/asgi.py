@@ -1,5 +1,5 @@
 """
-ASGI config for URLShortener project.
+ASGI config for urlshortener project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'URLShortener.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'urlshortener.settings')
 
 application = get_asgi_application()
