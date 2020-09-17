@@ -5,7 +5,6 @@ from django.db import models
 class UserManager(BaseUserManager):
 
     def create_user(self, email, username, password=None, **extra_fields):
-        print(email, 'HEREEEEEE')
         user = self.model(email=self.normalize_email(email), username=username.lower(), **extra_fields)
         user.set_password(password)
         user.save()
